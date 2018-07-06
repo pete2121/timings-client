@@ -2,10 +2,10 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.plakogip</groupId>
-    <artifactId>timings-javaclient</artifactId>
+    <artifactId>timings-client</artifactId>
     <packaging>jar</packaging>
     <version>0.7</version>
-    <name>timings-javaclient</name>
+    <name>timings-client</name>
     <url>https://github.com/pete2121/timings-client</url>
     <description>Project that provides an API and methods for the https://github.com/godaddy/timings project.
     </description>
