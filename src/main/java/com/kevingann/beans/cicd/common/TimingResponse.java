@@ -21,8 +21,11 @@ public class TimingResponse {
 
     @JsonProperty("api_version")
     private String apiVersion;
-
-    @JsonProperty("status")
+    
+    @JsonProperty("route")
+    private String route;
+    
+	@JsonProperty("status")
     private int status;
 
     @JsonProperty("took")
@@ -101,6 +104,10 @@ public class TimingResponse {
     public String getApiVersion() {
         return apiVersion;
     }
+    
+    public String getRoute() {
+		return route;
+	}
 
     public String getElasticSearchServer() {
         return elasticSearchServer;
