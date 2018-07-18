@@ -69,11 +69,52 @@ public class TimingsClientConfig {
         String url = TimingsClientConfig.getEnvVarOrProperty("PERF_API_URL");
         return getUrl(url);
     }
+    
+    
+    public static Long provideSLA() {
+        String sla = TimingsClientConfig.getEnvVarOrProperty("SLA");
+        return Long.valueOf(sla); 
+    }
+    
+    
+    public static Integer provideBaselineDays() {
+        String days = TimingsClientConfig.getEnvVarOrProperty("DAYS");
+        return Integer.valueOf(days); 
+    }
+    
+    
+    
+    public static double provideBaselinePadding() {
+        String padding = TimingsClientConfig.getEnvVarOrProperty("PADDING");
+        return Double.valueOf(padding); 
+    }
+    
+    
+    public static int provideBaselinePercent() {
+        String percent = TimingsClientConfig.getEnvVarOrProperty("PERCENT");
+        return Integer.valueOf(percent); 
+    }
+    
+ 
+    public static Boolean provideAssertBaseLine() {
+        String assertBaseline = TimingsClientConfig.getEnvVarOrProperty("ASSERT_BASELINE");
+        return Boolean.valueOf(assertBaseline); 
+    }
 
     public static String provideTeam() {
         return TimingsClientConfig.getEnvVarOrProperty("TEAM");
     }
 
+    public static String provideEnv() {
+        return TimingsClientConfig.getEnvVarOrProperty("ENVIRONMENT");
+    }
+
+
+    public static String provideTester() {
+        return TimingsClientConfig.getEnvVarOrProperty("TESTER");
+    }
+
+    
     public static Long provideTestInfo() {
         return Long.valueOf(TimingsClientConfig.getEnvVarOrProperty("TEST_INFO"));
     }
