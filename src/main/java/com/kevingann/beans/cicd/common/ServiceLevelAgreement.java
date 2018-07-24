@@ -13,8 +13,19 @@ public class ServiceLevelAgreement {
 
     @JsonProperty("pageLoadTime")
     private Long pageLoadTime;
+    
+    @JsonProperty("visualCompleteTime")
+    private Long visualCompleteTime;
 
-    public Long getPageLoadTime() {
+    public Long getVisualCompleteTime() {
+		return visualCompleteTime;
+	}
+
+	public void setVisualCompleteTime(Long visualCompleteTime) {
+		this.visualCompleteTime = visualCompleteTime;
+	}
+
+	public Long getPageLoadTime() {
         return pageLoadTime;
     }
 
