@@ -101,6 +101,10 @@ public class TimingsClientConfig {
         return Boolean.valueOf(assertBaseline); 
     }
 
+    public static String provideBaseLineURL() {
+    	 return TimingsClientConfig.getEnvVarOrProperty("BASELINE_URL");
+    }
+   
     public static String provideTeam() {
         return TimingsClientConfig.getEnvVarOrProperty("TEAM");
     }
